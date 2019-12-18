@@ -1,4 +1,4 @@
-## Laravel test project
+## Laravel Imenik
 
 <p align="center"><img src="https://i.imgur.com/Ayk3DaX.png" width="850"></p>
 
