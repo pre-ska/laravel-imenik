@@ -35,22 +35,22 @@
           </div> -->
           <div class="md-form">
             @csrf
-            <!-- <i class="fas fa-user prefix"></i> -->
+            <i class="fas fa-user prefix"></i>
             <input type="text" id="ime" class="form-control" name="ime">
             <label for="ime">Ime</label>
           </div>
           <div class="md-form">
-            <!-- <i class="fas fa-user prefix"></i> -->
+            <i class="fas fa-user prefix"></i>
             <input type="text" id="prezime" class="form-control" name="prezime">
             <label for="prezime">Prezime</label>
           </div>
           <div class="md-form">
-            <!-- <i class="fas fa-envelope prefix"></i> -->
+            <i class="fas fa-envelope prefix"></i>
             <input type="text" id="email" class="form-control" name="email">
             <label for="email">E-mail adresa</label>
           </div>
           <div class="md-form">
-            <!-- <i class="fas fa-phone prefix"></i> -->
+            <i class="fas fa-phone prefix"></i>
             <input type="text" id="telefon" class="form-control" name="telefon">
             <label for="telefon">Telefonski broj</label>
           </div>
