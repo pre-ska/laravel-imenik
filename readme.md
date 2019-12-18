@@ -1,10 +1,10 @@
-<p align="center"><img src="https://i.imgur.com/Ayk3DaX.png" width="600"></p>
-
 ## Laravel test project
 
-# Simple CRUD app
+<p align="center"><img src="https://i.imgur.com/Ayk3DaX.png" width="600"></p>
 
-Instructions:
+### Simple CRUD app
+
+Instructions:\
 After downloading zip or cloning this repo, cd to project folder, and install all PHP packages with
 
 ```
