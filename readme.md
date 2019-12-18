@@ -29,7 +29,7 @@ Generate an app encryption key
 php artisan key:generate
 ```
 
-Create an empty database (in MyPHPAdmin for instance)\
+Create an empty database (in phpMyAdmin for instance)\
 Fill .env file with credentials (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
 Migrate the database...
 
