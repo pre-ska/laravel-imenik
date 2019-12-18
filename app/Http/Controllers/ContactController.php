@@ -51,14 +51,8 @@ class ContactController extends Controller
         $validatedData = $request->validate([
             'ime' => 'required|regex:/[a-zA-Z0-9\pL]/u|max:255',
             'prezime' => 'required|regex:/[a-zA-Z0-9\pL]/u|max:255',
-            // 'email' => 'required|email|unique:users',
-            // 'email' => 'required|email',
             'email' => 'required|email:rfc,dns|unique:contacts,email',
-            // 'email' => 'required|email:rfc,dns',
-            // 'email' => 'required|email',
-            // 'telefon' => 'required|numeric|unique:users',
-            // 'telefon' => 'required|numeric',
-            'telefon' => 'required|min:5|regex:/^[0-9]+$/'
+            'telefon' => 'required|min:5|regex:/^[0-9]+$/|unique:contacts,telefon'
         ]);
 
         $contact = Contact::create($validatedData);
@@ -102,12 +96,10 @@ class ContactController extends Controller
         $validatedData = $request->validate([
             'ime' => 'required|regex:/[a-zA-Z0-9\pL]/u|max:255',
             'prezime' => 'required|regex:/[a-zA-Z0-9\pL]/u|max:255',
-            // 'email' => 'required|email|unique:businesses,email, '. auth()->user()->id,
-            // 'email' => 'required|email|unique,contacts,email,1',
-            'email' => 'required|email:rfc,dns|unique:contacts,email',
-            // 'telefon' => 'required|numeric',
+            'email' => 'required|email:rfc,dns|unique:contacts,email,'.$id,
             'telefon' => 'required|min:5|regex:/^[0-9]+$/'
         ]);
+
         Contact::whereId($id)->update($validatedData);
 
         return redirect('/contacts')->with('success', 'kontakt uspješno ažuriran');

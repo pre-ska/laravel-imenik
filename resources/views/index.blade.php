@@ -16,21 +16,22 @@
 
 </style>
 <div class="uper">
-  @if(session()->get('success'))
+  <!-- @if(session()->get('success'))
     <div class="alert alert-success">
       {{ session()->get('success') }}  
     </div><br />
-  @endif
-
+  @endif -->
+  <h3 class="text-center">Kontakti</h3>
   <div  class="pagination"style="display:inline-block">
-{{ $contacts->links() }}
-</div>
-<a href="/contacts/create" style="background:transparent; float:right;"  class="btn btn-light">Novi kontakt</a>
+    {{ $contacts->links() }}
+  </div>
+
+<a href="/contacts/create" style="background:transparent; float:right; box-shadow: none;"  class="page-link waves-effect waves-effect">Novi kontakt</a>
   <!-- <a href="/contacts/create" style="float:right; margin: 10px 0 30px 0;" style="background:transparent"  class="btn btn-light">Novi kontakt</a> -->
 
   <!-- <button onclick="window.location.href = '/contacts/create';" style="float:right; margin: 10px 0 30px 0;" class="btn btn-primary btnX">Novi kontakt</button> -->
   <table class="table table-striped" style="margin-top:30px;">
-    <thead class="thead-dark text-center" style='  color: #F5F5F5; background-color: #6E7A87; border-color: #F5F5F5' >
+    <thead class="thead-dark text-center" style='  color: #F5F5F5; background-color: #59698d ; border-color: #F5F5F5' >
         <tr>
           <td>ID</td>
           <td>Ime</td>
@@ -62,9 +63,10 @@
         @endforeach
     </tbody>
   </table>
+  <!-- <a href="/contacts/create"  class="btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a> -->
 
+</div>
 
-<div>
 <!-- <div  class="pagination"style="display:inline-block">
 {{ $contacts->links() }}
 </div>
