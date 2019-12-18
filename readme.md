@@ -1,6 +1,6 @@
 ## Laravel test project
 
-<p align="center"><img src="https://i.imgur.com/Ayk3DaX.png" width="600"></p>
+<p align="center"><img src="https://i.imgur.com/Ayk3DaX.png" width="750"></p>
 
 ### Simple CRUD app
 
