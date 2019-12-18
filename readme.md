@@ -45,7 +45,6 @@ php artisan migrate
 
 ... or download it from [here](https://drive.google.com/file/d/1seZ8CKRfUud3QYVw6qZp5p0JYWhpbdto/view?usp=sharing) and import it into your newly created DB
 
-...
 run
 
 ```
